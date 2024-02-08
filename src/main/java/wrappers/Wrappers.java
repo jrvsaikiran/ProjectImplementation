@@ -3,7 +3,9 @@ package wrappers;
 
 import java.io.IOException;
 
+import org.apache.poi.hpsf.Variant;
 
+import net.bytebuddy.asm.Advice.Return;
 
 public interface Wrappers {
 	/**
@@ -197,7 +199,13 @@ public interface Wrappers {
 	 */
 	public String getAlertText() ;
 	
-	
+	/**
+	 * This method will take snapshot of the browser
+	 * @author Basha - LibertyTestingCenter
+	 * @throws IOException 
+	 */
+	public void takeSnap();
+		
 	/**
 	 * This method will close the active browser
 	 * @author Basha - LibertyTestingCenter
@@ -215,11 +223,6 @@ public interface Wrappers {
 	public void waitTime(long time);
 	
 	public void pageDownByXpath(String xpath);
-	
-	//public void mouseOverByXPath();
-	
-	public void mouseOverByXpath(String xpath);
-	
 	
  
 
