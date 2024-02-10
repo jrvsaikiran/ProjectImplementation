@@ -2,6 +2,7 @@ package testcases;
 
 
 
+import org.junit.Test;
 import org.testng.annotations.Test;
 
 import wrappers.GenericWrappers;

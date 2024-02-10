@@ -8,7 +8,10 @@ import utils.DP001;
 import wrappers.GenericWrappers;
 
 public class TC0001 extends GenericWrappers {
-	
+
+
+
+
 	@Test(dataProvider="fetchData",dataProviderClass=DP001.class)
 	public void facebook(String firstName, String lastName, String email, String confEmail, String password,
 			String date, String month, String year) {
